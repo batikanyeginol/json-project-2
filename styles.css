@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #004080;
+}
+
+#user-cards, #post-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #004080;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffe0;
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #004080;
+    display: flex;
+    align-items: center;
+}
+
+.card h2 .material-icons {
+    margin-right: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.card p .material-icons {
+    margin-right: 10px;
+}
+
+.card p strong {
+    color: #ffcc00;
+}
+
+.card i {
+    color: #004080;
+}
+
+a {
+    text-decoration: none;
+    color: #004080;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    background-color: #004080;
+    color: #ffffe0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #002060;
+}
+
+.view-posts-button {
+    background-color: #004080;
+    color: #ffffe0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.view-posts-button:hover {
+    background-color: #002060;
+}
+
+/* Add styles for post-card to center the text */
+.post-card p {
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
